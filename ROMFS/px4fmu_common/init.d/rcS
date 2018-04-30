@@ -536,6 +536,9 @@ then
 					tune_control play -m ${TUNE_ERR}
 				fi
 			fi
+
+			rc_input start
+
 		fi
 	fi
 

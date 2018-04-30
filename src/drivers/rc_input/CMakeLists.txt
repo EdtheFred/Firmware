@@ -31,10 +31,12 @@
 #
 ############################################################################
 px4_add_module(
-	MODULE drivers__px4fmu
-	MAIN fmu
+	MODULE drivers__rc_input
+	MAIN rc_input
 	STACK_MAIN 1200
 	COMPILE_FLAGS
 	SRCS
-		fmu.cpp
+		RCInput.cpp
+	DEPENDS
+		rc
 	)
